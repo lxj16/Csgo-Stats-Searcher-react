@@ -1,3 +1,7 @@
+:root {
+  --primary-color: rgb(21, 57, 90);
+}
+
 .App {
   text-align: center;
 }
@@ -21,6 +25,20 @@
 
 .App-link {
   color: #61dafb;
+}
+
+body {
+  background-image: url(./assets/sniper.png);
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+}
+
+.body-bg-no-image {
+  background: var(--primary-color);
+}
+.body-bg-image {
+  background: var(--primary-color) url("./assets/sniper.png") no-repeat top
+    center;
 }
 
 @keyframes App-logo-spin {
